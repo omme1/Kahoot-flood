@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahoot Bot Flood (Educational)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kahoot Bot Flood</h1>
+        <p class="disclaimer">⚠️ For educational purposes only. Using this to disrupt games violates Kahoot's Terms of Service.</p>
+        
+        <div class="control-panel">
+            <div class="input-group">
+                <label for="gamePin">Kahoot Game PIN:</label>
+                <input type="text" id="gamePin" placeholder="123456">
+            </div>
+            
+            <div class="input-group">
+                <label for="botCount">Number of Bots:</label>
+                <input type="number" id="botCount" value="10" min="1" max="100">
+            </div>
+            
+            <div class="input-group">
+                <label for="botPrefix">Bot Name Pattern:</label>
+                <input type="text" id="botPrefix" value="Bot">
+            </div>
+            
+            <div class="input-group">
+                <label for="delay">Delay (ms):</label>
+                <input type="number" id="delay" value="200" min="0" max="1000">
+            </div>
+            
+            <button id="startBtn">Start Flood</button>
+            <button id="stopBtn" disabled>Stop Flood</button>
+        </div>
+        
+        <div class="log-container">
+            <h2>Activity Log</h2>
+            <div id="logOutput"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
